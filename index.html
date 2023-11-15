@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1 copy.js"></script>
+    <script src="cars.js"></script>
+    <style>
+        body {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 20px;
+        }
+
+        #header {
+        background-color: #ffffcc; /* light yellow background */
+        padding: 20px;
+        text-align: center;
+        font-size: larger;
+        }
+
+        #header h1 {
+        color: #ff3399; /* pink color */
+        margin: 0;
+        }
+
+        #header h2 {
+        color: #333; /* dark gray color */
+        margin: 10px 0;
+        }
+
+        #carList {
+        margin-bottom: 20px;
+        background-color: #97DCE0;
+        }
+
+        .car {
+        border: 1px solid #2b2c62;
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+
+        #addCarForm {
+        max-width: 800px;
+        margin: 0 auto;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 5px;
+        }
+
+        input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        background-color: #96A8E0;
+        }
+
+        button {
+        padding: 10px;
+        background-color:#E119BD;
+        color: white;
+        border: none;
+        cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #a0459b;
+        }
+    </style>
+ 
+</head>
+<body>
+
+    <div id="header">
+        <h1>List of my Favorite Cars</h1>
+        <h2>Add your affordable favorite cars to my list</h2>
+      </div>
+    
+      <div id="carList">
+        <!-- Car details will be dynamically added here -->
+      </div>
+    
+      <div id="addCarForm">
+        <h2>Add a New Car</h2>
+        <label for="carName">Car Name:</label>
+        <input type="text" id="carName">
+        <label for="carType">Car Type:</label>
+        <input type="text" id="carType">
+        <label for="funFact">Fun Fact:</label>
+        <input type="text" id="funFact">
+        <button id="addCarBtn">Add Car</button>
+      </div>
+
+</body>
+
+</html>
